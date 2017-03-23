@@ -70,9 +70,9 @@ cd build
 * Make Xcode project
 ```bash
 cmake -G Xcode ..
-mv ../models .
-mv ../shaders .
-mv ../textures .
+cp -R ../models .
+cp -R ../shaders .
+cp -R ../textures .
 ```
 * Open [Xcode](https://developer.apple.com/xcode/)
 ```bash
