@@ -1,0 +1,48 @@
+#ifndef OBJECT_H
+#define OBJECT_H
+
+#include <vector>
+#include <SDL2/SDL.h>
+#include <assimp/Importer.hpp>
+#include <assimp/scene.h>
+#include <assimp/postprocess.h>
+#include <assimp/color4.h>
+#include "graphics_headers.h"
+#include "PropertyManager.hpp"
+
+class Object
+{
+  public:
+    enum rotationCtrl {STOP, CW, CCW};
+
+    Object(char * objectModelFile);
+    ~Object();
+    void Update(unsigned int dt,
+                rotationCtrl orbitCtrl,
+                rotationCtrl planetCtrl);
+    void Render();
+    void LoadModel(const char* modelFile);
+
+    glm::mat4 GetModel();
+
+    PropertyManager m_properties;
+
+  private:
+    glm::mat4 model;
+    Assimp::Importer importer;
+    const aiScene* scene;
+    aiMesh* meshes;
+
+    std::vector<Vertex> Vertices;
+    std::vector<unsigned int> Indices;
+    GLuint VB;
+    GLuint IB;
+
+    float x, y, z;
+    float angle;
+    float degree;
+    rotationCtrl orbitCtrl;
+    rotationCtrl planetCtrl;
+};
+
+#endif /* OBJECT_H */

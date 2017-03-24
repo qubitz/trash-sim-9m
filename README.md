@@ -76,7 +76,7 @@ mv ../textures .
 ```
 * Open [Xcode](https://developer.apple.com/xcode/)
 ```bash
-open xcode TrashSim9M.xcodeproj
+open Xcode TrashSim9M.xcodeproj
 ```
 * Edit Working Directory
   - Go to Product > Scheme and tick 'TrashSim9M'
