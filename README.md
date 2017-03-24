@@ -96,10 +96,10 @@ Use the mouse to throw the ball! Click and hold the left mouse button while swin
 <kbd>R</kbd> Reset the ball in case it gets stuck  
 <kbd>\\</kbd> Toggles cheats. Allows you to adjust the ball mid air in the same way you throw the ball.
 
-#### -Pro Tip!- ####
-The faster you throw the ball, the farther it goes!
-#### -Extreme Tip!- ####
-If the front screen is stuck. Restart game and wait 2 *whole* seconds before clicking.
+#### Pro Tip! ####
+> The faster you throw the ball, the farther it goes!
+#### Extreme Tip! ####
+> If the front screen is stuck. Restart game and wait 2 *whole* seconds before clicking.
 
 ### Lighting controls ###
 <kbd>V</kbd> Toggle between lighting-per-vertex and lighting-per-fragment
