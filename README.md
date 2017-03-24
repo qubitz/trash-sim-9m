@@ -33,6 +33,8 @@ Taking advantage of the power of **OpenGL, SDL, Assimp, and Bullet Physics**, ou
 
 **Ambient lighting** implemented by custom shader programs fill the environment. In addition, textures provide the drab emotions of the typical office worker. **Physics collisions** with the crumpled ball of paper (e.g. rolls off desk, bounces off trash can, etc.) provide a realistic representation of desk objects and allow the goal of the game to be visualized.
 
+![Screenshot](https://github.com/qubytes/TrashSim9M/blob/Actual/pics/screenshot_overview.png)
+
 How to Run (Linux)
 ------------------
 * Install cmake
