@@ -70,13 +70,13 @@ cd build
 * Make Xcode project
 ```bash
 cmake -G Xcode ..
-mv ../models .
-mv ../shaders .
-mv ../textures .
+cp -R ../models .
+cp -R ../shaders .
+cp -R ../textures .
 ```
-* Open [Xcode](https://developer.apple.com/xcode/)
+* Open [Xcode](https://developer.apple.com/xcode/) project
 ```bash
-open Xcode TrashSim9M.xcodeproj
+open TrashSim9M.xcodeproj
 ```
 * Edit Working Directory
   - Go to Product > Scheme and tick 'TrashSim9M'
